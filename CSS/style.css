@@ -8,6 +8,11 @@
     --dairy:#E7E9FC;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
@@ -17,13 +22,20 @@ body {
     background-color: var(--white);
 }
 
+.container {
+    width: 1158px;
+}
+
 /* studio and portfolio html */
 .logo-menu-contacts {
+    padding-left: 156px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    height: 72px;
     border-bottom: 1px solid var(--dairy);
+    justify-content:space-between;
 }
 
  .logo{
@@ -36,7 +48,7 @@ body {
 .logo-menu{
     align-items: center;
     display: flex;
-    margin-left: 156px;
+    /* margin-left: 156px; */
 }
 
 .web{
@@ -59,7 +71,7 @@ body {
 }
 
 .menu{  
-    margin-left: 36px;
+    padding-left: 36px;
     gap: 40px;
     display: flex;
     color: var(--navyblue);
@@ -71,31 +83,39 @@ body {
 }
 
 .mail-phone{
-    margin-left: auto;
-    margin-right: 156px;
     display: flex;
-    gap:40px;
-
+    gap: 40px;
+    padding-right: 156px;
 }
 
+.mail-link {
+    color: var(--slate);
+    text-decoration: none;
+    align-items:end;
+}
 
-.mail-phone-link{    
+.mail-link:hover {
+    color: var(--ocean);
+}
+
+.phone-link {
     color: var(--slate);
     text-decoration: none;
 }
 
-.mail-phone-link:hover {
+.phone-link:hover {
     color: var(--ocean);
 }
 
 /* studio html */
 .hero {
     background: var(--navyblue);
-    height: 600px;
+    /* height: 600px; */
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    
     }
 
 .hero-title{
@@ -104,6 +124,8 @@ body {
     line-height: 1.07; /* 107.143% */
     letter-spacing: 1.12px;
     color: var(--white);
+    padding-top: 188px;
+    padding-bottom: 48px;
 }
 
 .order-button{
@@ -114,6 +136,7 @@ body {
     cursor: pointer;
     color:var(--white);
     letter-spacing: 0.64px;
+    margin-bottom: 188px;
 }
 
 .order-button:hover{
@@ -166,15 +189,17 @@ body {
 }
 
 .services-ul{
-    margin-top: 72px;
+    padding-top: 72px;
+    padding-bottom: 120px;
     display: flex;
     justify-content: center;
     list-style: none;
     align-items: center;
+    gap: 24px;
 }
 
 .services-list{
-    margin-left: 24px;
+    /* margin-left: 24px; */
     width: 360px;
     height: 300px;
     border: 1px solid var(--dairy);
@@ -182,13 +207,13 @@ body {
 }
 
 .key-people {
-    margin-top: 120px;
-    height: 732px;
+    padding-top: 120px;
     background:var(--cloud);
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 120px;
 }
 
 .key-people-heading{
@@ -202,7 +227,7 @@ body {
 }
 
 .key-people-ul{
-    margin-top: 72px;
+    padding-top: 72px;
     justify-content: center;
     display: flex;
     list-style: none;
@@ -229,17 +254,18 @@ body {
 
 /* studio and portfolio html */
 .logo-end{
-    height: 312px;
+    /* height: 312px; */
     background: var(--navyblue);
+    padding-bottom: 100px;
+    padding-left: 156px;
 }
 
-.logo{
+.logo-end .logo{
     text-decoration: none;
-    margin-left: 156px;
     display: flex;
+    padding-top: 102px ;
 }
 .end-web{
-    margin-top: 101.5px;
     font-family: "Raleway";
     font-size: 18px;
     font-weight: 800;
@@ -250,7 +276,6 @@ body {
 }
 
 .end-studio {
-    margin-top: 101.5px;
     font-family: "Raleway";
     font-size: 18px;
     font-weight: 800;
@@ -261,7 +286,6 @@ body {
 }
 
 .end-sentence{
-    margin-left: 156px;
     padding-top: 17.5px;
     width: 264px;
     color: var(--cloud);
@@ -269,8 +293,7 @@ body {
 
 /* portfolio html */
 .filters{
-    margin-bottom: 72px;
-    margin-top: 96px;
+    padding-top: 96px; 
 }
 
 .filter-ul{
@@ -308,8 +331,8 @@ body {
 }
 
 .project-cards{
-    margin-top: 72px;
-    margin-bottom: 82px;
+    padding-top: 72px;
+    padding-bottom: 120px;
 }
 
 .project-cards-ul {
@@ -318,18 +341,19 @@ body {
     justify-content: center;
     list-style: none;
     gap:24px
+   
 }
 
 .project-cards-list{
-    margin-bottom: 38px;
+    padding-bottom: 38px;
     border: 1px solid var(--cornflower, var(--dairy));
     background: var(--white, var(--white));
     width: 360px;
-    height: 420px;
+    
 }
 
 .project-cards-heading{
-    margin-top: 32px;
+    padding-top: 32px;
     color: var(--navyblue);
     font-size: 20px;
     line-height: 1.2; /* 120% */

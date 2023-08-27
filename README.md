@@ -1,17 +1,18 @@
-# goit-markup-hw-02
+# goit-markup-hw-03
+
     Instructions
 
 ### V1.1
 
-- Create a repository **goit-markup-hw-02**.
+- Create a repository **goit-markup-hw-03**.
 - Clone the created repository and copy the previous work files into it.
-- Make HTML markup and styling for the [homework #2 page](https://www.figma.com/file/B1m2uk25m1eAgroESAuM2g/Web-Studio-(Version-3.0)?node-id=296708%3A626&t=DFWSubf7qGD8icbf-0).
-- For image optimization, use [squoosh](https://squoosh.app/).
+- Add styles for geometry (width, margins, paddings and borders) and content positioning with Flexbox for page layout of [homework #3](<https://www.figma.com/file/B1m2uk25m1eAgroESAuM2g/Web-Studio-(Version-3.0)?node-id=296708%3A626&t=uvTMoqaZKt8IMr34-0>).
 - Set up **GitHub Pages** and add a link to the live page in the header of the GitHub repository.
 
 ## **Criteria for work acceptance by the tutor**
 
 ### Project
+
 **«A1»** In the root of the project, there is a folder called **images** with images.
 
 **«A2»** In the root of the project, there is a **css** folder with style sheets.
@@ -24,35 +25,40 @@
 
 **«A6»** All images and text content are taken from the layout.
 
-**«A7»** All raster images are optimized using [squoosh](https://squoosh.app/).
+**«A7»** All HTML pages have a style normalizer [modern-normalize](https://github.com/sindresorhus/modern-normalize).
 
-**«A8»** The code is in line with the [guide](https://codeguide.co/).
+### Styling
 
-### Markup
-**«B1»** The Portfolio page layout is in the **portfolio.html** file.
+**«B1»** Global style reset is allowed using tag selector for such elements as **< h1 >**...**< h6 >**, **< p >** and **< ul >**.
 
 **«B2»** HTML-markup is done for all layout elements.
 
-**«B3»** Tags are used according to their semantics.
+**«B3»** In one-line element collections, the left or right **margin** (if any) is cleared for all elements.
 
-**«B4»** HTML can be validated using [validator](http://validator.w3.org/nu/) without errors.
+**«B4»** The **margin** property is used for margins between two adjacent elements.
 
-**«B5»** Class names are descriptive and can be understood by other developers.
+**«B5»** The **padding** property is used for the gap between the parent's edge and its child.
 
-**«B6»** Class names do not contain capital letters, spaces, transliteration and tag names, only English letters and words. If a class name consists of multiple words, they are separated by a hyphen.
+**«B6»** All margins (**margin** property) and paddings (**padding** property) of elements are set exactly in line with the layout.
 
-**«B7»** The **href** attribute of the **Studio** and **Portfolio** navigation links contains a relative path to the HTML files of these pages. When you click on a link, you go to the corresponding page in the current browser tab.
+**«B7»** There is a generic auxiliary class, **.container**, to center and restrict the width of content.
 
-**«B8»** All **< img >** tags have size attributes, at least width.
+**«B8»** The width of the "container" matches the layout, and it is equal to **1158px**.
 
-**«B9»** Images are exported from the layout in jpg format.
+**«B9»** The "container" contains the header, footer and section content. That is, they are inside it.
 
-**«B10»** Groups of the same-type elements are in **< ul >** lists.
+**«B10»** **Flexbox** is used to arrange elements, but only where necessary. For example, in the header, navigation, lists in sections, etc., that is, where it is impossible to arrange elements horizontally in a customized way.
 
-**«B11»** The filter on the Portfolio page is a list of buttons, each of which is set the type="button" attribute.
+**«B11»** Final box sizes in the browser match the layout.
 
-**«B12»** Header and footer markup is the same across all pages.
+**«B12»** Elements do not have a fixed height, as it is determined by their content.
 
-**«B13»** All fonts and their variations (weight and type) required for the layout are linked from the Google Fonts service with one link. The required weight for Raleway is 800, and for Roboto, it is 400, 500, 700 and 900.
+**«B13»** The header has a bottom border, but you need to zoom in very closely to see it.
 
-**«B14»** There are no additional elements, such as spans or links, inside the button markup.
+**«B14»** Section arrangement is similar to a stack of books, with no margins.
+
+**«B15»** All sections use one class **.section**, and they are set top and bottom paddings at 120px, pushing the content inside the section.
+
+**«B16»** Grids are created using the technique described in the notes and video workshop.
+
+**«B17»** The cards on the **Portfolio** page have a border (**border** property), but only at the bottom of the cards.
